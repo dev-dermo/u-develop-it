@@ -94,21 +94,6 @@ app.post('/api/candidate', (req, res) => {
   });
 });
 
-// db.query(`DELETE FROM candidates WHERE id = ?`, 1, (err, results) => {
-//   if (err) console.log(err);
-
-//   console.log(results);
-// });
-
-// const sql = `INSERT INTO candidates (id, first_name, last_name, industry_connected) VALUES (?, ?, ?, ?)`;
-// const params = [1, 'Ronald', 'Firbank', 1];
-
-// db.query(sql, params, (err, results) => {
-//   if (err) console.log(err);
-
-//   console.log(results);
-// });
-
 // Default response for any other request (Not Found)
 app.use((req, res) => {
   res.status(404).end();
